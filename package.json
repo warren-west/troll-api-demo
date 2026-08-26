@@ -1,0 +1,15 @@
+{
+  "name": "troll-api",
+  "version": "1.0.0",
+  "description": "Express API for troll details",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
