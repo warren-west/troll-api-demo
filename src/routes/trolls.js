@@ -19,4 +19,9 @@ router.get("/", (req, res) => {
   res.json(trolls);
 });
 
+router.get('/random', (req, res) => {
+  const index = Math.floor(Math.random() * trolls.length)
+  res.json(trolls[index]) // returns a random troll object
+})
+
 module.exports = router;
