@@ -2,7 +2,7 @@ const express = require("express");
 const trollsRouter = require("./routes/trolls");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to the Troll API!" });
@@ -20,6 +20,5 @@ app.get("/health", (req, res) => {
 
 app.use("/trolls", trollsRouter);
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+
+module.exports = app
