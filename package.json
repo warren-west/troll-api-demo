@@ -2,10 +2,10 @@
   "name": "troll-api",
   "version": "1.0.0",
   "description": "Express API for troll details",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "jest --detectOpenHandles"
+    "start": "node src/server.js",
+    "test": "jest"
   },
   "engines": {
     "node": ">=18"
